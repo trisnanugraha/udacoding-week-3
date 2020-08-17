@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siakad Universitas XYZ</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><h2>Universitas XYZ</h2></a>
+      </div>
+      <div class="menu-dropdown">
+        <ul>
+          <li>Dashboard</li>
+          <li>Keuangan</li>
+          <li>
+            Biodata
+            <ul>
+              <li>Mahasiswa</li>
+              <li>Dosen</li>
+            </ul>
+          </li>
+          <li>
+            Perkuliahan
+            <ul class="dropdown-child">
+              <li>Kurikulum</li>
+              <li>Penjadwalan</li>
+            </ul>
+          </li>
+          <li>
+            Laporan
+            <ul class="dropdown-child">
+              <li>Akademik</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="table-bg">
+        <table class="table-data">
+          <tr>
+            <th>Nama Lengkap</th>
+            <th>NIM</th>
+            <th>Asal Kota</th>
+            <th>Program Studi</th>
+            <th>Aksi</th>
+          </tr>
+          <tr>
+            <td>Ahmad Jaelani</td>
+            <td>2017001001</td>
+            <td>Tangerang</td>
+            <td>Teknik Informatika</td>
+            <td>
+              <button class="ubah">Ubah</button>
+              <button class="hapus">Hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Budi Setiawan</td>
+            <td>2017001002</td>
+            <td>Jakarta</td>
+            <td>Teknik Informatika</td>
+            <td>
+              <button class="ubah">Ubah</button>
+              <button class="hapus">Hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Adinda Rahmawati</td>
+            <td>2017002001</td>
+            <td>Bengkulu</td>
+            <td>Sistem Informasi</td>
+            <td>
+              <button class="ubah">Ubah</button>
+              <button class="hapus">Hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Reynaldi</td>
+            <td>2017002002</td>
+            <td>Malang</td>
+            <td>Sistem Informasi</td>
+            <td>
+              <button class="ubah">Ubah</button>
+              <button class="hapus">Hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Brian Aditya</td>
+            <td>2017003001</td>
+            <td>Bekasi</td>
+            <td>Teknik Elektro</td>
+            <td>
+              <button class="ubah">Ubah</button>
+              <button class="hapus">Hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Rangga Prasetya</td>
+            <td>2017004001</td>
+            <td>Semarang</td>
+            <td>Akuntansi</td>
+            <td>
+              <button class="ubah">Ubah</button>
+              <button class="hapus">Hapus</button>
+            </td>
+          </tr>
+        </table>
+
+        <div>
+          <button class="tambah"><a href="#popup">Tambah Data</a></button>
+        </div>
+
+        <div class="total-rows">
+          Total : 25 Data
+        </div>
+
+        <div class="pagination">
+          <ul>
+            <a href="#"><li>&laquo;</li></a>
+            <a href="#"><li class="active">1</li></a>
+            <a href="#"><li>2</li></a>
+            <a href="#"><li>3</li></a>
+            <a href="#"><li>4</li></a>
+            <a href="#"><li>5</li></a>
+            <a href="#"><li>&raquo;</li></a>
+          </ul>
+        </div>
+
+        <div id="popup">
+          <div class="window">
+            <a href="#" class="close" title="Tutup">x</a>
+            <h3>Tambah Data Mahasiswa</h3>
+            <form id="form-daftar" action="#" method="GET" target="_blank">
+              <label for="namalengkap">Nama Lengkap</label>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                placeholder="contoh : Trisna Nugraha"
+                required
+              />
+
+              <label for="nim">NIM</label>
+              <input
+                type="text"
+                name="nim"
+                id="nim"
+                placeholder="contoh : 2017001001"
+                required
+              />
+
+              <label for="kota">Asal Kota</label>
+              <input
+                type="text"
+                name="kota"
+                id="kota"
+                placeholder="contoh : Jakarta"
+                required
+              />
+
+              <label for="jurusan">Program Studi</label>
+              <select name="jurusan" id="jurusan" required>
+                <option value="" selected>Pilih Program Studi</option>
+                <option value="ti">Teknik Informatika</option>
+                <option value="si">Sistem Informasi</option>
+                <option value="elektro">Teknik Elektro</option>
+                <option value="akuntansi">Akuntansi</option>
+              </select>
+
+              <input type="submit" name="daftar" id="daftar" value="Daftar" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="license"><p>Copyright 2020. By Trisna Nugraha</p></div>
+    </footer>
+  </body>
+</html>
